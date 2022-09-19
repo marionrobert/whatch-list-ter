@@ -1,5 +1,11 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container text-center">
+    <h1>Here are all my lists</h1>
+  </div>
+</div>
+
 <div class="container">
-  <h1 class="mt-5">Here are all my lists</h1>
+
   <ul>
     <% @lists.each do |list|%>
       <li><%= list.name %> <%= link_to list_path(list) do %>
@@ -8,5 +14,5 @@
     <% end %>
   </ul>
 
-  <%= link_to "Create a new list", new_list_path, class: "btn btn-secondary" %>
+  <%= link_to "Create a new list", new_list_path, class: "btn btn-ghost" %>
 </div>
