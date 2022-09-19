@@ -1,0 +1,9 @@
+<div class="container">
+  <h1 class= "mt-5">Add a new movie to <%= @list.name %> </h1>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :comment, placeholder: 'Adviced by my friend Lisa' %>
+    <%= f.input :movie_id, collection: Movie.all, prompt: "Select a movie" %>
+    <%= f.submit class: 'btn btn-dark' %>
+  <% end %>
+  <%= link_to "All my lists", lists_path, class: "btn btn-dark" %>
+</div>
