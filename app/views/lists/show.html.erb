@@ -1,0 +1,10 @@
+<div class="container">
+  <h1 class= "mt-5"><%= @list.name %></h1>
+
+  <%= link_to "Update my list", edit_list_path(@list), class: "btn btn-dark" %>
+  <%= link_to "Delete my list",
+  list_path(@list),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},
+  class: "btn btn-dark" %>
+  <%= link_to "All my lists", lists_path, class: "btn btn-dark" %>
+</div>
