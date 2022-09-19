@@ -1,8 +1,11 @@
 <div class="container">
-  <h1 class= "mt-5">Create a new list</h1>
-  <%= simple_form_for @list do |f| %>
-    <%= f.input :name, placeholder: 'Drama' %>
-    <%= f.submit class: 'btn btn-ghost' %>
-  <% end %>
-  <%= link_to "All my lists", lists_path, class: "btn btn-ghost" %>
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <h1 class= "mt-5">Create a new list</h1>
+      <%= simple_form_for @list do |f| %>
+        <%= f.input :name, placeholder: 'Drama' %>
+        <%= f.submit class: 'btn btn-ghost' %>
+      <% end %>
+    </div>
+  </div>
 </div>
