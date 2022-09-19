@@ -1,0 +1,32 @@
+.card-img-movie {
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  // margin-bottom: 10px;
+  border-radius: 3px;
+  padding: 5px;
+  position: relative;
+}
+
+.infos-movie {
+  p {
+    margin: 0;
+  }
+}
+
+.card-movie .fa-star {
+  color: gold;
+}
+
+.card-movie a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-movie .fa-trash-can-arrow-up {
+  position: absolute ;
+  bottom: 35%;
+  right: 4%;
+  z-index: 2;
+}
+

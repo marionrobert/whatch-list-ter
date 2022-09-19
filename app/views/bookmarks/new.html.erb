@@ -3,7 +3,7 @@
   <%= simple_form_for [@list, @bookmark] do |f| %>
     <%= f.input :comment, placeholder: 'Adviced by my friend Lisa' %>
     <%= f.association :movie, prompt: "Select a movie" %>
-    <%= f.submit class: 'btn btn-dark' %>
+    <%= f.submit class: 'btn btn-ghost' %>
   <% end %>
-  <%= link_to "All my lists", lists_path, class: "btn btn-dark" %>
+  <%= link_to "All my lists", lists_path, class: "btn btn-ghost" %>
 </div>
