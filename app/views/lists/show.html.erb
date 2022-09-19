@@ -1,8 +1,18 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-  <div class="container text-center">
-    <h1><%= @list.name %></h1>
+<% if @list.photo.attached? %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+  url('<%= cl_image_path @list.photo.key, crop: :fill %>')">
+    <div class="container text-center">
+      <h1><%= @list.name %></h1>
+    </div>
   </div>
-</div>
+<% else %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+  url(https://media.istockphoto.com/photos/fresh-popcorn-picture-id1124745046?k=20&m=1124745046&s=612x612&w=0&h=bqUC4tagZ-NiSWSt5KXUBYqGOco0wpF4pURwWYoK37o=)">
+    <div class="container text-center">
+      <h1><%= @list.name %></h1>
+    </div>
+  </div>
+<% end %>
 
 <div class="container">
 

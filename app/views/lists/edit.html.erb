@@ -4,7 +4,8 @@
       <h1 class= "mt-5">Update <%= @list.name %></h1>
       <%= simple_form_for @list do |f| %>
         <%= f.input :name, placeholder: 'Drama' %>
-        <%= f.submit class: 'btn btn-ghost' %>
+        <%= f.input :photo, as: :file %>
+        <%= f.button :submit, "Confirm", class: 'btn btn-ghost' %>
       <% end %>
     </div>
   </div>
