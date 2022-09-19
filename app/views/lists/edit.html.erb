@@ -1,0 +1,8 @@
+<div class="container">
+  <h1 class= "mt-5">Update <%= @list.name %></h1>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name, placeholder: 'Drama' %>
+    <%= f.submit class: 'btn btn-dark' %>
+  <% end %>
+  <%= link_to "All my lists", lists_path, class: "btn btn-dark" %>
+</div>
